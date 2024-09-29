@@ -12,8 +12,6 @@ If the user enters an invalid medium choice, the program will terminate with an 
 // If you answered "No", what testing did not pass?
 // Did your program meet the requirements? : Yes or No
 // If you answered "No", what requirements were not met?
- 
-
 
 /*
 I will abide by the ACC Honor code and answer these following questions with full integrity and honesty, I understand if I answer "False" to any of these questions, I will receive zero for this assignemnt
@@ -27,8 +25,9 @@ I will abide by the ACC Honor code and answer these following questions with ful
 
 using namespace std;
 
-int main() {
-    // Speeds
+int main()
+{
+    // Speed values for air, water, and steel in ft/sec
     const double AIR_SPEED = 1100.0;
     const double WATER_SPEED = 4900.0;
     const double STEEL_SPEED = 16400.0;
@@ -46,7 +45,8 @@ int main() {
     cin >> choice;
 
     // Checking for invalid choice
-    if (choice < 1 || choice > 3) {
+    if (choice < 1 || choice > 3)
+    {
         cout << "Invalid choice. Program terminating.\n";
         return 1;
     }
@@ -56,22 +56,23 @@ int main() {
     cin >> distance;
 
     // Calculate time based on the selected medium
-    switch (choice) {
-        case 1:
-            time = distance / AIR_SPEED;
-            cout << setprecision(4);
-            cout << "The sound wave will travel " << distance << " feet through air in " << time << " seconds.\n";
-            break;
-        case 2:
-            time = distance / WATER_SPEED;
-            cout << setprecision(4);
-            cout << "The sound wave will travel " << distance << " feet through water in " << time << " seconds.\n";
-            break;
-        case 3:
-            time = distance / STEEL_SPEED;
-            cout << setprecision(4);
-            cout << "The sound wave will travel " << distance << " feet through steel in " << time << " seconds.\n";
-            break;
+    switch (choice)
+    {
+    case 1:
+        time = distance / AIR_SPEED;
+        cout << setprecision(4);
+        cout << "The sound wave will travel " << distance << " feet through air in " << time << " seconds.\n";
+        break;
+    case 2:
+        time = distance / WATER_SPEED;
+        cout << setprecision(4);
+        cout << "The sound wave will travel " << distance << " feet through water in " << time << " seconds.\n";
+        break;
+    case 3:
+        time = distance / STEEL_SPEED;
+        cout << setprecision(4);
+        cout << "The sound wave will travel " << distance << " feet through steel in " << time << " seconds.\n";
+        break;
     }
     return 0;
 }
