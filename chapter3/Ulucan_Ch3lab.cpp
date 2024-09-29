@@ -1,11 +1,11 @@
 // Omer Ulucan
+
 // This program calculates the property tax based on the 
 // actual property value and the tax rate entered by the user.
 // It displays the assessed property value (60% of the actual value) 
 // and calculates the property tax accordingly.
 
 // Status : Complete
-
 // Did your program pass the  testing? : Yes
 // If you answered "No", what testing did not pass? N/A
 // Did your program meet the requirements? : Yes
